@@ -1,0 +1,59 @@
+.fa-tensorflow:before {
+    display: block;
+    margin-top: 13px;
+    height: 60px;
+    width: 60px;
+    background: url(../icons/tensorflow.jpg) no-repeat center;
+    background-size: 100%;
+    content: " ";
+}
+
+.fa-AE:before {
+    display: block;
+    margin-top: 18px;
+    height: 50px;
+    width: 50px;
+    background: url(../icons/AE.jpg) no-repeat center;
+    background-size: 100%;
+    content: " ";
+}
+
+.fa-opengl:before {
+    display: block;
+    margin-top: 13px;
+    height: 66px;
+    width: 66px;
+    background: url(../icons/opengl.jpg) no-repeat center;
+    background-size: 100%;
+    content: " ";
+}
+
+.fa-opencv:before {
+    display: block;
+    margin-top: 16px;
+    height: 50px;
+    width: 50px;
+    background: url(../icons/opencv.jpg) no-repeat center;
+    background-size: 100%;
+    content: " ";
+}
+
+.fa-web:before {
+    display: block;
+    margin-top: 17px;
+    height: 50px;
+    width: 50px;
+    background: url(../icons/springboot.jpg) no-repeat center;
+    background-size: 100%;
+    content: " ";
+}
+
+.fa-cpp:before {
+    display: block;
+    margin-top: 18px;
+    height: 50px;
+    width: 50px;
+    background: url(../icons/c++.jpg) no-repeat center;
+    background-size: 100%;
+    content: " ";
+}

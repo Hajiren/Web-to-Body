@@ -1,0 +1,104 @@
+{
+    "layouts": [
+        {
+            "elements": [
+                {
+                    "fillColorBlueValue": 255,
+                    "verticalPreference": "None",
+                    "fillColorGreenValue": 255,
+                    "height": 50,
+                    "fillColorRedValue": 255,
+                    "isLocked": "false",
+                    "isDrawingFill": 1,
+                    "y": -1,
+                    "x": -1,
+                    "horizontalPreference": "None",
+                    "type": "ImageElement",
+                    "width": 250
+                },
+                {
+                    "fillColorBlueValue": 255,
+                    "verticalPreference": "None",
+                    "fillColorGreenValue": 255,
+                    "height": 50,
+                    "fillColorRedValue": 255,
+                    "isLocked": "false",
+                    "isDrawingFill": 1,
+                    "y": -1,
+                    "x": -1,
+                    "horizontalPreference": "None",
+                    "type": "ImageElement",
+                    "width": 100
+                },
+                {
+                    "fillColorBlueValue": 255,
+                    "verticalPreference": "None",
+                    "fillColorGreenValue": 255,
+                    "height": 300,
+                    "fillColorRedValue": 255,
+                    "isLocked": "false",
+                    "isDrawingFill": 1,
+                    "y": -1,
+                    "x": -1,
+                    "horizontalPreference": "None",
+                    "type": "ImageElement",
+                    "width": 300
+                },
+                {
+                    "fillColorBlueValue": 255,
+                    "verticalPreference": "None",
+                    "fillColorGreenValue": 255,
+                    "height": 216,
+                    "fillColorRedValue": 255,
+                    "isLocked": "false",
+                    "isDrawingFill": 1,
+                    "y": -1,
+                    "x": -1,
+                    "horizontalPreference": "None",
+                    "type": "ImageElement",
+                    "width": 384
+                },
+                {
+                    "fillColorBlueValue": 255,
+                    "verticalPreference": "None",
+                    "fillColorGreenValue": 255,
+                    "height": 50,
+                    "fillColorRedValue": 255,
+                    "isLocked": "false",
+                    "isDrawingFill": 1,
+                    "y": -1,
+                    "x": -1,
+                    "horizontalPreference": "None",
+                    "type": "ImageElement",
+                    "width": 50
+                },
+                {
+                    "fillColorBlueValue": 255,
+                    "verticalPreference": "None",
+                    "fillColorGreenValue": 255,
+                    "height": 20,
+                    "fillColorRedValue": 255,
+                    "isLocked": "false",
+                    "isDrawingFill": 1,
+                    "y": -1,
+                    "x": -1,
+                    "horizontalPreference": "None",
+                    "type": "ImageElement",
+                    "width": 100
+                }
+            ],
+            "canvasHeight": 1920,
+            "borderYPadding": 32,
+            "isOptimised": false,
+            "userRating": 0,
+            "elementYPadding": 32,
+            "elementXPadding": 32,
+            "id": "originalLayout",
+            "score": 0,
+            "borderXPadding": 28,
+            "canvasWidth": 1080,
+            "isSaved": false,
+            "isEdited": false
+        }
+    ]
+}

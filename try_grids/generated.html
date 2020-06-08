@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>generated</title>
+    <link rel="stylesheet" href="generated.css">
+</head>
+
+<body>
+	<p id="firstSentence">Here's the first sentence</p>
+	<img id="firstImage" src="resources/images/about.jpg"/>
+	<img id="secondImage" src="resources/images/blog-banner.png"/>
+	<p id="secondSentence">Here's the second sentence</p>
+	<button id="firstButton">Just a button1</button>
+	<button id="secondButton">Just a button2</button>
+	<script src="https://cdn.bootcss.com/html2canvas/0.5.0-beta4/html2canvas.min.js"></script>
+        <script type="text/javascript">
+            var oDiv = document.getElementById('oDiv');
+
+            // body截图
+            // html2canvas(document.body).then(function(canvas) {
+            //     document.body.appendChild(canvas);
+            // });
+
+            html2canvas(oDiv).then(function(canvas) {
+                document.body.appendChild(canvas);
+                var oCavans = document.getElementsByTagName('canvas')[0];
+                var strDataURI = oCavans.toDataURL();
+                downLoadFn(strDataURI);
+            });
+
+            //判断浏览器类型
+            function myBrowser() {
+                var userAgent = navigator.userAgent; //取得浏览器的userAgent字符串
+                var isOpera = userAgent.indexOf("Opera") > -1;
+                if(isOpera) {
+                    return "Opera"
+                }; //判断是否Opera浏览器
+                if(userAgent.indexOf("Firefox") > -1) {
+                    return "FF";
+                } //判断是否Firefox浏览器
+                if(userAgent.indexOf("Chrome") > -1) {
+                    return "Chrome";
+                }
+                if(userAgent.indexOf("Safari") > -1) {
+                    return "Safari";
+                } //判断是否Safari浏览器
+                if(userAgent.indexOf("compatible") > -1 && userAgent.indexOf("MSIE") > -1 && !isOpera) {
+                    return "IE";
+                }; //判断是否IE浏览器
+                if(userAgent.indexOf("Trident") > -1) {
+                    return "Edge";
+                } //判断是否Edge浏览器
+            }
+
+            //IE浏览器图片保存本地
+            function SaveAs5(imgURL) {
+                var oPop = window.open(imgURL, "", "width=1, height=1, top=5000, left=5000");
+                for(; oPop.document.readyState != "complete";) {
+                    if(oPop.document.readyState == "complete") break;
+                }
+                oPop.document.execCommand("SaveAs");
+                oPop.close();
+            }
+
+            // chrome14+,firefox20+,pera15+,Edge 13+,Safari未实现
+            function download(strDataURI) {
+                var link = document.createElement('a');
+                link.innerHTML = 'download_canvas_image';
+                link.download = 'mypainting.png';
+                link.addEventListener('click', function(ev) {
+                    link.href = strDataURI;
+                }, false);
+                document.body.appendChild(link);
+            };
+
+            function downLoadFn(url) {
+                if(myBrowser() === "IE" || myBrowser() === "Edge") {
+                    SaveAs5(url);
+                } else {
+                    download(url);
+                }
+            }
+        </script>
+</body>
+
+</html>
